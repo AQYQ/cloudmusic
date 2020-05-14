@@ -1,0 +1,9 @@
+<!-- <app-mit-city-select [selected]="'默认值(可为空)'" (result)="citySelect($event)"></app-mit-city-select> -->
+<button nz-button nzType="primary">Primary</button>
+<br>
+<hr>
+<br>
+<nz-select style="width: 200px;" nzShowSearch nzServerSearch nzPlaceHolder="input search text" [nzShowArrow]="false"
+    [nzFilterOption]="nzFilterOption" [(ngModel)]="selectedValue" (nzOnSearch)="search($event)">
+    <nz-option *ngFor="let o of listOfOption" [nzLabel]="o.text" [nzValue]="o.value"> </nz-option>
+</nz-select>

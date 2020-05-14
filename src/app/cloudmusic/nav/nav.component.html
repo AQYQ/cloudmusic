@@ -1,0 +1,61 @@
+<div>
+    <div class="m-top">
+        <div class="wrap f-cb">
+            <h1 class="logo">
+                <a routerLink="/">网易云音乐</a>
+            </h1>
+            <ul class="m-nav j-tflag">
+                <li class="fst">
+                    <span>
+                        <a routerLink="/cloudmusic/find" routerLinkActive="z-slt">
+                            <em>发现音乐</em>
+                            <sub class="cor">&nbsp;</sub>
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        
+                        <a routerLink="/cloudmusic/my" routerLinkActive="z-slt">
+                            <em>我的音乐</em>
+                            <sub class="cor">&nbsp;</sub>
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <a routerLink="/cloudmusic/friend" routerLinkActive="z-slt">
+                            <em>朋友</em>
+                            <sub class="cor">&nbsp;</sub>
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <a routerLink="/cloudmusic/mall" routerLinkActive="z-slt">
+                            <em>商城</em>
+                            <sub class="cor">&nbsp;</sub>
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <a routerLink="/cloudmusic/musician" routerLinkActive="z-slt">
+                            <em>音乐人</em>
+                            <sub class="cor">&nbsp;</sub>
+                        </a>
+                    </span>
+                </li>
+                <li class="lst">
+                    <span>
+                        <a routerLink="/cloudmusic/download" routerLinkActive="z-slt">
+                            <em>下载客户端</em>
+                            <sub class="cor">&nbsp;</sub>
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="m-subnav m-subnav-up f-pr j-tflag" [ngClass]="{'f-hide':isFind}"></div>
+</div>
